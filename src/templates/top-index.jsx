@@ -70,30 +70,7 @@ export const query = graphql`
             imageFileNameDetail
             imageFileName
           }
-          social {
-            facebook
-            github
-            linkedin
-            medium
-            twitter
-            instagram
-            website
-          }
           subheader
-          teamMember {
-            header
-            imageFileName
-            social {
-              facebook
-              github
-              linkedin
-              medium
-              twitter
-              instagram
-              website
-            }
-            subheader
-          }
           title
           timeline {
             content
@@ -131,7 +108,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <SEO lang={langKey} title="Caitlin & Justin" keywords={keywords} description={description} />
+      <SEO lang={langKey} title="Daniela & Stephan" keywords={keywords} description={description} />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}
