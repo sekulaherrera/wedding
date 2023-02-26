@@ -9,11 +9,6 @@
         align-items: center;
         justify-content: center;
     }
-    .socials {
-        margin-left: 1em;
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 @media (max-width: 992px){
@@ -25,8 +20,5 @@
     .credit {
         flex-direction: row;
         // font-size: 12pt;
-    }
-    .socials {
-        margin-top: .5em;
     }
 }
