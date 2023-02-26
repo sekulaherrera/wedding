@@ -1,11 +1,10 @@
 module.exports = {
-  title: "Caitlin & Justin",
+  title: "Daniela & Stephan",
   keywords: [
-    "Caitlin Floyd",
-    "Justin Vazquez"
+    "Daniela del Carmen Herrera Morales",
+    "Stephan Sekula"
   ],
-  description: "Wedding website of Caitlin Floyd and Justin Vazquez",
-  author: "Caitlin Floyd",
-  trackingId: "UA-119418003-5",
+  description: "Wedding website of Daniela del Carmen Herrera Morales and Stephan Sekula",
+  author: "Stephan Sekula",
   defaultLang: "en",
 };

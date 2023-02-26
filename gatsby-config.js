@@ -10,16 +10,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId,
-      },
-    },
-    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: title,
-        short_name: "Caitlin & Justin",
+        short_name: "Daniela & Stephan",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#9ebc9f",
