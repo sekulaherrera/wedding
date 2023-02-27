@@ -1,3 +1,5 @@
+import Sha256 from './sha256.js';
+
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
@@ -183,15 +185,13 @@ $(document).ready(function () {
 
 
     /********************** RSVP **********************/
-    $('#rsvp-form').on('submit', async function (e) {
+    $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
         var data = $(this).serialize();
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Please wait...</strong> Saving your details.'));
-
-        const { createHash } = await import('node:crypto');
-
-        if (createHash('sha256').update($('#invite_code').val()).digest('hex') !== 'b1e3d2624807335612c5acb94bc3460cb90b04f39a3d97a211860edd8e464457') {
+   
+        if (Sha256.hash($('#invite_code').val()) !== 'b1e3d2624807335612c5acb94bc3460cb90b04f39a3d97a211860edd8e464457') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbyopuH8ir2p4WvyQUIRHJ95DrJNRaoqdpLGA0HadbCjsdyjddOkXMXDwN7q6IFUC3FHng/exec', data)
