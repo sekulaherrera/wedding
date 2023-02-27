@@ -273,6 +273,7 @@ Hero
     font-family: "Snell Roundhand", "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji", cursive;
+    font-size: 70px;
   }
   p.intro {
     color: $txt-light;
@@ -373,13 +374,6 @@ header {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-}
-
-/* ==========================================================================
-Social share buttons
-========================================================================== */
-.share-bar {
-  margin-top: 20px;
 }
 
 /* ==========================================================================
