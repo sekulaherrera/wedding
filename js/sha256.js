@@ -177,4 +177,4 @@ class Sha256 {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-export default Sha256;
+//export default Sha256;
