@@ -1,5 +1,3 @@
-import Sha256 from './sha256.js';
-
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
