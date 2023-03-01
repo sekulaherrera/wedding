@@ -227,6 +227,8 @@ function initMap() {
         position: location,
         map: map
     });
+
+    window.initMap = initMap;
 }
 
 function initBBSRMap() {
