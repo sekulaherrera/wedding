@@ -216,7 +216,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 20.6564984, lng: -105.2536798};
+    var location = {lat: 20.656498486201187, lng: -105.24944455618083};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
