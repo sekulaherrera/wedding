@@ -137,8 +137,7 @@ $(document).ready(function () {
     });
 
     /********************* Add wedding countdown ********************/
-    $.countdown.setDefaults({description: 'Until liftoff'});
-    $('#weddingCountdown').countdown({until: new Date(2023, 3-1, 15)});
+    //$('#weddingCountdown').countdown({until: new Date(2024, 3-1, 15), timezone: -6});
 
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
@@ -213,6 +212,8 @@ $(document).ready(function () {
     });
 
 });
+
+$('#weddingCountdown').countdown({until: new Date(2024, 3-1, 15), timezone: -6});
 
 /********************** Extras **********************/
 
