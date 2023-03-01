@@ -136,6 +136,10 @@ $(document).ready(function () {
 
     });
 
+    /********************* Add wedding countdown ********************/
+    $.countdown.setDefaults({description: 'Until liftoff'});
+    $('#weddingCountdown').countdown({until: new Date(2023, 3-1, 15)});
+
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
 
