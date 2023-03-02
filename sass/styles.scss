@@ -62,6 +62,10 @@ section .header {
 .section-border {
   border-bottom: 1px solid $keyline-color;
 }
+#vline {
+  background: none no-repeat scroll 0 0 #fff;
+  position: relative;
+}
 .tooltip {
   position: absolute;
   z-index: 1070;
