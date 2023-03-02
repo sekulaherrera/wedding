@@ -551,16 +551,15 @@ Features-stack
 .countdown
 ========================================================================== */
 .is-countdown {
-	border: 1px solid #ccc;
-	background-color: #eee;
   margin: auto
 }
 /*.countdown-rtl {
 	direction: rtl;
-}
+}*/
 .countdown-holding span {
 	color: #888;
-}*/
+  margin: auto
+}
 .countdown-row {
 	clear: both;
 	width: 100%;
