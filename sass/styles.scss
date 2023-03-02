@@ -274,9 +274,7 @@ Hero
   h1 {
     color: $txt-light;
     margin-bottom: 40px;
-    font-family: "Snell Roundhand", "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji", cursive;
+    font-family: "Snell Roundhand", cursive;
     font-size: 70px;
   }
   p.intro {
@@ -301,7 +299,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(50, 50, 50, .88);
   z-index: 999;
   width: 100%;
 }
@@ -592,7 +590,8 @@ Features-stack
 .countdown-section {
 	display: block;
 	float: left;
-	font-size: 75%;
+	font-family: "Snell Roundhand", cursive;
+  font-size: 70px;
 	text-align: center;
 }
 .countdown-amount {
