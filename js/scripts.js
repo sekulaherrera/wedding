@@ -137,7 +137,25 @@ $(document).ready(function () {
     });
 
     /********************* Add wedding countdown ********************/
-    $('#weddingCountdown').countdown({until: new Date(2024, 3-1, 15), timezone: -6});
+    //$('#weddingCountdown').countdown({until: new Date(2024, 3-1, 15), timezone: -6});
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentYear = new Date().getFullYear();
+        let targetDate = new Date(2024, 3+1, 15);
+        let onStart = () => {
+            document.querySelectorAll('.countdown-item').forEach(item => item.classList.add('show'))
+        }
+        let onTick = ({ days, hours, minutes, seconds }) => {
+            document.querySelector('.countdown-item.days').innerHTML = days;
+            document.querySelector('.countdown-item.hours').innerHTML = hours;
+            document.querySelector('.countdown-item.minutes').innerHTML = minutes;
+            document.querySelector('.countdown-item.seconds').innerHTML = seconds;
+        };
+        let options = new LsCountdownOptions({ targetDate, onStart, onTick });
+        let countdown = new LsCountdown(options);
+        countdown.start();
+        window.mycountdown = countdown;
+    });
 
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
