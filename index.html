@@ -51,26 +51,6 @@
         }
     </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        let currentYear = new Date().getFullYear();
-        let targetDate = new Date(2024, 3+1, 15);
-        let onStart = () => {
-            document.querySelectorAll('.countdown-item').forEach(item => item.classList.add('show'))
-        }
-        let onTick = ({ days, hours, minutes, seconds }) => {
-            document.querySelector('.countdown-item.days').innerHTML = days;
-            document.querySelector('.countdown-item.hours').innerHTML = hours;
-            document.querySelector('.countdown-item.minutes').innerHTML = minutes;
-            document.querySelector('.countdown-item.seconds').innerHTML = seconds;
-        };
-        let options = new LsCountdownOptions({ targetDate, onStart, onTick });
-        let countdown = new LsCountdown(options);
-        countdown.start();
-        window.mycountdown = countdown;
-    });
-    </script>
-
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
@@ -133,7 +113,6 @@
                 <h3>We are getting married</h3>
                 <p>on the 15<sup>th</sup> of March, 2023, and we would like to share this moment with you.</p>
                 <h3>Time remaining:</h3>
-                <!--span id="weddingCountdown"></span-->
                 <div id="countdown">
                     <div class="countdown-item days">0</div>
                     <div class="countdown-item hours">0</div>
@@ -156,7 +135,7 @@
             <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
             <div class="col-md-6">
                 <p>
-                    On a Friday, I was sitting in a train from Hamburg back to Berlin. It was a difficult week with a
+                    On a Friday, I was sitting in a train returning from a business trip from Hamburg to Berlin. It was a difficult week with a
                     client and all I wanted is to get back home, take a shower, and rest. However, a friend of mine, Monse,
                     called me, asking her for help. Honestly, I was considering to deny the request and just continue on
                     with my plan to rest. Something in my mind told me to be a nice guy and help her, instead. So that's
@@ -620,8 +599,6 @@
 <script src="/modules/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="/js/vendor/ouical.js"></script>
 <script src="/js/sha256.js"></script>
-<script src="/js/jquery.plugin.min.js"></script> 
-<script src="/js/jquery.countdown.min.js"></script>
 <script src="/js/ls-countdown.min.js"></script>
 <script src="/js/scripts.min.js"></script>
 <script async defer
