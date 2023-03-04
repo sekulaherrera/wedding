@@ -137,9 +137,7 @@ $(document).ready(function () {
     });
 
     /********************* Add wedding countdown ********************/
-    //$('#weddingCountdown').countdown({until: new Date(2024, 3-1, 15), timezone: -6});
-
-    let targetDate = new Date(2024, 3-1, 15, 12);
+    let targetDate = new Date(2025, 3-1, 15, 12);
     let onStart = () => {
         document.querySelectorAll('.countdown-item').forEach(item => item.classList.add('show'))
     }
