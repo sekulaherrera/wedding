@@ -63,8 +63,11 @@ section .header {
   border-bottom: 1px solid $keyline-color;
 }
 #vline {
-  background: none no-repeat scroll 0 0 #fff;
+  background: none no-repeat scroll 0 0 #e6e9ea;
   position: relative;
+  height: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .tooltip {
   position: absolute;
@@ -714,6 +717,10 @@ Instagram
   img {
     width: 100%;
   }
+}
+
+.instagram {
+  font-size: 40px
 }
 
 /* ==========================================================================
