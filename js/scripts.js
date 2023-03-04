@@ -228,7 +228,7 @@ $(document).ready(function () {
 /********************** Extras **********************/
 
 // Google map
-function initMap() {
+/*function initMap() {
     var location = {lat: 20.656498486201187, lng: -105.24944455618083};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
@@ -241,9 +241,11 @@ function initMap() {
     });
 
     window.initMap = initMap;
-}
+}*/
 
 // alert_markup
 function alert_markup(alert_type, msg) {
     return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
 }
+
+
