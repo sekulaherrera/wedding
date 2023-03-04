@@ -556,11 +556,11 @@ Features-stack
 }
 /*.countdown-rtl {
 	direction: rtl;
-}*/
+}
 .countdown-holding span {
 	color: #888;
   margin: auto
-}
+}*/
 .countdown-row {
 	clear: both;
 	width: 50%;
@@ -590,11 +590,15 @@ Features-stack
 	width: 14%;
 }
 .countdown-section {
-	display: block;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
 	float: left;
 	font-family: "Snell Roundhand", cursive;
   font-size: 20px;
 	text-align: center;
+  margin-left: 15%;
+  margin-right: -25%;
 }
 .countdown-amount {
     font-size: 200%;
