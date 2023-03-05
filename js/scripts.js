@@ -137,15 +137,15 @@ $(document).ready(function () {
     });
 
     /********************* Add wedding countdown ********************/
-    let targetDate = new Date(2025, 3-1, 15, 12);
+    let targetDate = new Date(2024, 3-1, 15, 12);
     let onStart = () => {
         document.querySelectorAll('.countdown-item').forEach(item => item.classList.add('show'))
     }
-    let onTick = ({ days, hours, minutes, seconds }) => {
-        document.querySelector('.countdown-item.days').innerHTML = days;
-        document.querySelector('.countdown-item.hours').innerHTML = hours;
-        document.querySelector('.countdown-item.minutes').innerHTML = minutes;
-        document.querySelector('.countdown-item.seconds').innerHTML = seconds;
+    let onTick = ({ years, days, hours, minutes, seconds }) => {
+        document.querySelector('.countdown-item.days').innerText = years*365+days;
+        document.querySelector('.countdown-item.hours').innerText = hours;
+        document.querySelector('.countdown-item.minutes').innerText = minutes;
+        document.querySelector('.countdown-item.seconds').innerText = seconds;
     };
     let options = new LsCountdownOptions({ targetDate, onStart, onTick });
     let countdown = new LsCountdown(options);
