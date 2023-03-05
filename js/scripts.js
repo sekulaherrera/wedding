@@ -178,14 +178,14 @@ $(document).ready(function () {
             title: "Daniela and Stephan's Wedding",
 
             // Event start date
-            start: new Date('Mar 15, 2023 10:00'),
+            start: new Date('Mar 15, 2024 10:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Mar 16, 2023 01:00'),
+            end: new Date('Mar 16, 2024 01:00'),
 
             // Event Address
             address: 'Patio Los Arcos Vallarta, Marina Vallarta, 48450 Puerto Vallarta, Jalisco, Mexico',
