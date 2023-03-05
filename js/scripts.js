@@ -142,7 +142,7 @@ $(document).ready(function () {
         document.querySelectorAll('.countdown-item').forEach(item => item.classList.add('show'))
     }
     let onTick = ({ years, days, hours, minutes, seconds }) => {
-        document.querySelector('.countdown-item.days').innerText = parseInt(years.slice(0, -1))*365+parseInt(days.slice(0, -1));
+        document.querySelector('.countdown-item.days').innerText = parseInt(years.slice(0, -1))*365+parseInt(days.slice(0, -1))+'d';
         document.querySelector('.countdown-item.hours').innerText = hours;
         document.querySelector('.countdown-item.minutes').innerText = minutes;
         document.querySelector('.countdown-item.seconds').innerText = seconds;
