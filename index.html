@@ -1,611 +1,555 @@
-<!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Wedding Daniela & Stephan</title>
-    <base href="/">
-    <meta name="description" content="We would like to invite you to our wedding!">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Wedding Daniela & Stephan">
-    <meta property="og:description" content="We would like to invite you to our wedding!">
-    <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
-    <meta property="og:type" content="website">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-
-    <script>
-        // load css files from CDN if local node_modules fail
-        function loadCssFromCDN(css) {
-            // create new link tag
-            const link = document.createElement('link');
-            if (css === 'animate.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
-            } else if (css === 'font-awesome.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-            }
-            link.rel = 'stylesheet';
-            // add link tag to head section
-            document.getElementsByTagName('head')[0].appendChild(link);
-        }
-
-        // load js files from CDN if local node_modules fail
-        function loadJsFromCDN(js) {
-            if (js === 'waypoints.js') {
-                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
-            } else if (js === 'jquery.js') {
-                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
-            }
-        }
-    </script>
-
-    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
-    <link rel="stylesheet" type="text/css" href="/css/flexslider.css">
-    <link rel="stylesheet" type="text/css" href="/css/styles.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/queries.css">
-    <link rel="stylesheet" type="text/css" href="/modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-    <link rel="stylesheet" type="text/css" href="/modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
-    <script type="application/javascript" src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-<body id="top">
-<section class="hero">
-    <section class="navigation">
-        <header>
-            <div class="header-content">
-                <div class="header-nav">
-                    <nav>
-                        <ul class="primary-nav">
-                            <li><a href="#intro">How we met</a></li>
-                            <li><a href="#schedule">Schedule</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#instagram">Photo Tag</a></li>
-                            <li><a href="#eng-pics">Engagement Photos</a></li>
-                            <li><a href="#map">The Venue</a></li>
-                            <li><a href="#hotels">Hotel Recommendations</a></li>
-                        </ul>
-                        <ul class="member-actions">
-                            <!--li><a href="#map" class="login">The Venue</a></li>
-                            <li><a href="#hotels" class="login">Hotel Recommendations</a></li-->
-                            <!--li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li-->
-                            <div class="language-dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    🌐
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">English</a>
-                                  <a class="dropdown-item" href="#">Español</a>
-                                  <a class="dropdown-item" href="#">Deutsch</a>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Wedding Daniela &amp; Stephan</title>
+        <base href="/">
+        <meta name="description" content="We would like to invite you to our wedding!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+        <meta property="og:title" content="Wedding Daniela &amp; Stephan">
+        <meta property="og:description" content="We would like to invite you to our wedding!">
+        <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
+        <meta property="og:type" content="website">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+        <link rel="stylesheet" type="text/css" href="/css/flexslider.css">
+        <link rel="stylesheet" type="text/css" href="/css/styles.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="/modules/animate.css/animate.min.css"
+            onerror="loadCssFromCDN(&apos;animate.css&apos;)">
+        <link rel="stylesheet" type="text/css" href="/modules/font-awesome/css/font-awesome.min.css"
+            onerror="loadCssFromCDN(&apos;font-awesome.css&apos;)">
+    </head>
+    <body id="top">
+        <section class="hero">
+            <section class="navigation">
+                <header>
+                    <div class="header-content">
+                        <div class="header-nav">
+                            <nav>
+                                <ul class="primary-nav">
+                                    <li><a href="#intro">How we met</a>
+                                    </li>
+                                    <li><a href="#schedule">Schedule</a>
+                                    </li>
+                                    <li><a href="#events">Events</a>
+                                    </li>
+                                    <li><a href="#instagram">Photo Tag</a>
+                                    </li>
+                                    <li><a href="#eng-pics">Engagement Photos</a>
+                                    </li>
+                                    <li><a href="#map">The Venue</a>
+                                    </li>
+                                    <li><a href="#hotels">Hotel Recommendations</a>
+                                    </li>
+                                </ul>
+                                <ul class="member-actions">
+                                    <!--li><a href="#map" class="login">The Venue</a></li>
+                                        <li><a href="#hotels" class="login">Hotel Recommendations</a></li-->
+                                    <!--li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li-->
+                                    <div class="language-dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#x1F310;</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">English</a>
+                                            <a class="dropdown-item"
+                                                href="#">Espa&#xF1;ol</a>
+                                            <a class="dropdown-item" href="#">Deutsch</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="navicon"> <a class="nav-toggle" href="#"><span></span></a>
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-md-1">
+                        <div class="hero-content text-center">
+                            <h1>Daniela &amp; Stephan</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 hidden-xsd-none d-sm-block"></div>
+                    <!--div class="col-md-4 hidden-xsd-none d-sm-block text-center"><a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a></div-->
+                    <div class="col-md-4 hidden-xsd-none d-sm-block"></div>
+                </div>
+            </div>
+            <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a>
+            </div>
+        </section>
+        <section id="invitation" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>We are getting married</h3>
+                        <p>on the 15<sup>th</sup> of March, 2024, and we would like to share this
+                            moment with you.
+                        </p>
+                        <h3>Time remaining:</h3>
+                        <div id="countdown">
+                            <div class="countdown-item days">0</div>
+                            <div class="countdown-item hours">0</div>
+                            <div class="countdown-item minutes">0</div>
+                            <div class="countdown-item seconds">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 class="header">How we met</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 d-none d-md-block">
+                        <img src="img/IMG_2317.jpg" class="wp1">
+                    </div>
+                    <div class="col-lg-6">
+                        <p>On a Friday night, I was sitting in a train returning from a business
+                            trip from Hamburg to Berlin. It was a difficult week with a client and
+                            all I wanted is to get back home, take a shower, and rest. However, a friend
+                            of mine, Monse, called me, asking her for help. Honestly, I was considering
+                            to deny the request and just continue on with my plan to rest. Something
+                            in my mind told me to be a nice guy and help her, instead. So that&apos;s
+                            what I did: I told her to let me get back home, take a shower, and I will
+                            be with her in a couple of hours. When I arrived at her place, all I could
+                            see was Daniela - not even remotely noticing all of the Mexicans standing
+                            in Monse&apos;s kitchen. This was the day I knew that I was going to marry
+                            this girl. A couple years down the line, here we are, inviting you to our
+                            wedding.
+                            <br>I knew I was right...&#x1F609;
+                        </p>
+                    </div>
+                    <div class="col-lg-3 d-none d-md-block">
+                        <img src="img/DSD_0214.jpg" class="wp2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 order-sm-2 col-6 d-md-none d-block">
+                        <img src="img/IMG_2317.jpg" class="wp8">
+                    </div>
+                    <div class="col-md-4 order-sm-2 col-6 d-md-none d-block">
+                        <img src="img/DSD_0214.jpg" class="wp9">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="events section-padding" id="schedule">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="header">Schedule</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12 leftcol">
+                        <div class="wp3">
+                            <p><strong>15th March</strong>
+                            </p>
+                            <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="wp5">
+                            <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
+                            <p>Dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12 rightcol">
+                        <div class="wp4">
+                            <p><strong>28th November</strong>
+                            </p>
+                            <h5>Haldi <span class="time">10AM-11AM</span></h5>
+                            <p>The haldi ceremony is usually held separately for the bride and the groom.
+                                This one is for the bride. It is a low-key event that involves the application
+                                of turmeric paste on the hands, legs and face of the bride. The groom is
+                                not allowed to see the bride after this ritual until the final wedding
+                                ceremony starts.
+                            </p>
+                        </div>
+                        <div class="wp6">
+                            <h5>Wedding <span class="time">6PM-12AM</span></h5>
+                            <p>This is the main event in the entire wedding when the bride and the groom
+                                tie the knot. The groom comes with the barat and is greeted by the bride
+                                side with some dhol of course as maximum number of guests would be attending
+                                this event. This is when the couple circle the sacred fire and are finally
+                                declared husband and wife.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-padding">
+                <div class="col-lg-4 offset-md-4 text-center"> <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                    <i class="fa fa-barcode"></i>&#xA0;&#xA0;Dress code
+                    </a>
+                </div>
+            </div>
+            <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&#xD7;</span>
+                            </button>
+                            <h3 class="text-center section-padding">Dress Code</h3>
+                            <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
+                            <p> <strong>Ethnic indian wear</strong>
+                                <br>Ladies can wear something <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-women/">bright &amp; vivid</a>
+                                and
+                                gentlemen can be on their <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-men/">vibrant
+                                kurtas</a> with pants or pyjamas along with an
+                                optional shawl.
+                            </p>
+                            <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
+                            <p> <strong>Western attire</strong>
+                                <br>A semi-formal look that is contemporary &amp; fashionable which is not
+                                too prim &amp; proper is the best to pull off this night. You can see some
+                                pins for <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-women/">ladies</a>
+                                &amp;
+                                <a
+                                    href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-men/">gents</a>.
+                            </p>
+                            <h5>Wedding <span class="time">6PM-12AM</span></h5>
+                            <p> <strong>Indo-western</strong>
+                                <br>Ladies can flaunt their unconventional sarees, <a href="https://www.pinterest.com/ramswarooppatra/indo-western-lehengas/">lehengas</a>,
+                                <a
+                                    href="https://www.pinterest.com/ramswarooppatra/indo-western-anarkalis/">anarkalis</a>, dresses and the list goes on whereas gentlemen can wear
+                                any kind of suit or just blazer. If you don&apos;t like to wear a suit/blazer,
+                                you can do a <a href="https://www.pinterest.com/ramswarooppatra/high-neck-jackets-for-men/">high-neck
+                                (band gala) waistcoat &amp; shirt</a> combo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="vline"></div>
+        </section>
+        <section class="events section-padding" id="events">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="header">Events</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12 leftcol">
+                        <div class="wp3">
+                            <p><strong>27th November</strong>
+                            </p>
+                            <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
+                            <p>It&apos;s one of the oldest traditional Indian pre wedding ceremony where
+                                the bride and groom attend the event together and a professional mehndi
+                                artist applies mehndi to the bride&apos;s hands and feet. This will be
+                                having a celebratory festival feel to it with people wearing vibrant clothes
+                                and dancing, singing, playing games and a lot more.
+                            </p>
+                        </div>
+                        <div class="wp5">
+                            <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
+                            <p>This event is no way close to ethnic. The bride &amp; groom would like
+                                to have some &quot;shots before the knot&quot;. With booze flowing down
+                                the floor and the western attire on, everyone would be busy showing off
+                                their new moves on the stage which they have finely honed. Lastly, expect
+                                some beer pong matches &amp; karaoke for sure.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12 rightcol">
+                        <div class="wp4">
+                            <p><strong>28th November</strong>
+                            </p>
+                            <h5>Haldi <span class="time">10AM-11AM</span></h5>
+                            <p>The haldi ceremony is usually held separately for the bride and the groom.
+                                This one is for the bride. It is a low-key event that involves the application
+                                of turmeric paste on the hands, legs and face of the bride. The groom is
+                                not allowed to see the bride after this ritual until the final wedding
+                                ceremony starts.
+                            </p>
+                        </div>
+                        <div class="wp6">
+                            <h5>Wedding <span class="time">6PM-12AM</span></h5>
+                            <p>This is the main event in the entire wedding when the bride and the groom
+                                tie the knot. The groom comes with the barat and is greeted by the bride
+                                side with some dhol of course as maximum number of guests would be attending
+                                this event. This is when the couple circle the sacred fire and are finally
+                                declared husband and wife.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="instagram" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>Making memories with you...</h3>
+                        <p class="instagram-text">Help us remember the moment: tag your photos with <a href="https://instagram.com/explore/tags/herrerasekula/"
+                            target="_blank" rel="noopener noreferrer nofollow">#HerreraSekula</a>
+                        </p>
+                        <p>Also, please use the disposable cameras provided...</p>
+                    </div>
+                </div>
+                <div class="row section-border wp7">
+                    <div class="instagram">&#x1F4F7;</div>
+                </div>
+            </div>
+        </section>
+        <section id="eng-pics" class="section-padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 class="header">Engagement Photos</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <a class="fancybox" rel="group" href="img/eng_pics/eng1-lg.jpeg">
+                            <div class="img-wrap">
+                                <div class="overlay">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <img src="img/eng_pics/eng1-sm.jpeg" alt>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="fancybox" rel="group" href="img/eng_pics/eng2-lg.jpeg">
+                            <div class="img-wrap">
+                                <div class="overlay">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <img src="img/eng_pics/eng2-sm.jpeg" alt>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="fancybox" rel="group" href="img/eng_pics/eng3-lg.jpeg">
+                            <div class="img-wrap">
+                                <div class="overlay">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <img src="img/eng_pics/eng3-sm.jpeg" alt>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="fancybox" rel="group" href="img/eng_pics/eng4-lg.jpeg">
+                            <div class="img-wrap">
+                                <div class="overlay">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <img src="img/eng_pics/eng4-sm.jpeg" alt>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="fancybox" rel="group" href="img/eng_pics/eng5-lg.jpeg">
+                            <div class="img-wrap">
+                                <div class="overlay">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <img src="img/eng_pics/eng5-sm.jpeg" alt>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="fancybox" rel="group" href="img/eng_pics/eng6-lg.jpeg">
+                            <div class="img-wrap">
+                                <div class="overlay">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <img src="img/eng_pics/eng6-sm.jpeg" alt>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row hidden-xs d-md-none d-block">
+                    <div class="col-12 section-border section-padding"></div>
+                </div>
+            </div>
+        </section>
+        <section id="map" class="section-padding">
+            <div class="text-center">
+                <h3>The venue</h3>
+                <p>We will celebrate at Patio Los Arcos Vallarta on the beach. Please find
+                    below a map to the venue, as well as a functionality, which will allow
+                    you to book an Uber with the click of a button.
+                </p>
+            </div>
+            <section id="video-bg" class="d-none d-md-block">
+                <div id="bgndVideo" class="player" data-property="{videoURL:&apos;https://youtu.be/DD1Ek1Kn4OI&apos;,containment:&apos;#video-bg&apos;,autoPlay:true, mute:true, showControls:false, startAt:420, stopAt:510, opacity:1}"></div>
+                <div id="video-content">
+                    <h5>Puerto Vallarta</h5>
+                    <p>Una playa con sabor a M&#xE9;xico</p>
+                </div>
+            </section>
+            <section>
+                <div class="text-center">
+                    <h3>Map</h3>
+                </div>
+            </section>
+            <div id="map-canvas">
+                <iframe src="https://storage.googleapis.com/maps-solutions-1ev48sjwl6/neighborhood-discovery/zrwk/neighborhood-discovery.html"
+                    width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+            </div>
+            <div id="map-content-wrapper" class="container pointer-events-none">
+                <div class="row">
+                    <div class="offset-1 col-10 offset-md-3 col-lg-6">
+                        <div class="text-center">
+                            <div id="btn-show-content" class="toggle-map-content pointer-events-auto"> <i class="fa fa-info-circle"></i>&#xA0;&#xA0; Show info</div>
+                        </div>
+                        <div id="map-content" class="pointer-events-auto">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h5>Patio Los Arcos Vallarta</h5>
+                                    <p>Marina Vallarta, 48450 Puerto Vallarta, Jalisco, Mexico</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h5>Mr. Amit Roy</h5>
+                                    <p><i class="fa fa-mobile"></i>  <a href="tel://+919412345678">+91 9412345678</a>
+                                        <br> <i class="fa fa-mobile"></i>  <a href="tel://+917123456789">+91 7123456789</a>
+                                    </p>
                                 </div>
                             </div>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="navicon">
-                    <a class="nav-toggle" href="#"><span></span></a>
-                </div>
-            </div>
-        </header>
-    </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="hero-content text-center">
-                    <h1>Daniela & Stephan</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <!--div class="col-sm-4 hidden-xs text-center"><a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a></div-->
-            <div class="col-sm-4 hidden-xs"></div>
-        </div>
-    </div>
-    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
-</section>
-
-<section id="invitation" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>We are getting married</h3>
-                <p>on the 15<sup>th</sup> of March, 2024, and we would like to share this moment with you.</p>
-                <h3>Time remaining:</h3>
-                <div id="countdown">
-                    <div class="countdown-item days">0</div>
-                    <div class="countdown-item hours">0</div>
-                    <div class="countdown-item minutes">0</div>
-                    <div class="countdown-item seconds">0</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="intro">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">How we met</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
-            <div class="col-md-6">
-                <p>
-                    On a Friday night, I was sitting in a train returning from a business trip from Hamburg to Berlin. It was a difficult week with a
-                    client and all I wanted is to get back home, take a shower, and rest. However, a friend of mine, Monse,
-                    called me, asking her for help. Honestly, I was considering to deny the request and just continue on
-                    with my plan to rest. Something in my mind told me to be a nice guy and help her, instead. So that's
-                    what I did: I told her to let me get back home, take a shower, and I will be with her in a couple of
-                    hours.
-                    When I arrived at her place, all I could see was Daniela - not even remotely noticing all of the
-                    Mexicans standing in Monse's kitchen. This was the day I knew that I was going to marry this girl.
-                    A couple years down the line, here we are, inviting you to our wedding.<br>
-                    I knew I was right...😉
-                </p>
-            </div>
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_2317.jpg" class="wp8"></div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp9"></div>
-        </div>
-    </div>
-</section>
-
-<section class="events section-padding" id="schedule">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="header">Schedule</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <div class="wp3">
-                    <p><strong>15th March</strong></p>
-
-                    <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
-                    <p>Lorem ipsum</p>
-                </div>
-                <div class="wp5">
-                    <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
-                    <p>Dolor sit amet</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <p><strong>28th November</strong></p>
-
-                    <h5>Haldi <span class="time">10AM-11AM</span></h5>
-                    <p>The haldi ceremony is usually held separately for the bride and the groom. This one is for the
-                        bride. It is a low-key event that involves the application of turmeric paste on the hands, legs
-                        and face of the bride. The groom is not allowed to see the bride after this ritual until the
-                        final wedding ceremony starts.</p>
-                </div>
-                <div class="wp6">
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>This is the main event in the entire wedding when the bride and the groom tie the
-                        knot. The groom comes with the barat and is greeted by the bride side with some dhol of course
-                        as maximum number of guests would be attending this event. This is when the couple circle the
-                        sacred fire and are finally declared husband and wife.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row section-padding">
-        <div class="col-md-4 col-md-offset-4 text-center">
-            <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
-            </a>
-        </div>
-    </div>
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">Dress Code</h3>
-                    <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
-                    <p>
-                        <strong>Ethnic indian wear</strong>
-                        <br>
-                        Ladies can wear something
-                        <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-women/">bright & vivid</a>
-                        and gentlemen can be on
-                        their <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-men/">vibrant
-                        kurtas</a> with pants or pyjamas along with an optional shawl.
-                    </p>
-                    <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
-                    <p>
-                        <strong>Western attire</strong>
-                        <br>
-                        A semi-formal look that is contemporary & fashionable which is not too prim & proper is the best
-                        to pull off this night. You can see some pins for
-                        <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-women/">ladies</a>
-                        & <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-men/">gents</a>.
-                    </p>
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>
-                        <strong>Indo-western</strong>
-                        <br>
-                        Ladies can flaunt their unconventional sarees,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-lehengas/">lehengas</a>,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-anarkalis/">anarkalis</a>,
-                        dresses and the list
-                        goes on whereas gentlemen can wear any kind of suit or just blazer. If you don't like to wear a
-                        suit/blazer, you can do a <a
-                            href="https://www.pinterest.com/ramswarooppatra/high-neck-jackets-for-men/">high-neck
-                        (band gala) waistcoat & shirt</a> combo.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div id="vline"></div>
-</section>
-
-<section class="events section-padding" id="events">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="header">Events</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <div class="wp3">
-                    <p><strong>27th November</strong></p>
-
-                    <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
-                    <p>It's one of the oldest traditional Indian pre wedding ceremony where the bride and groom
-                        attend the event together and a professional mehndi artist applies
-                        mehndi to the bride's hands and feet. This will be having a celebratory
-                        festival feel to it with people wearing vibrant clothes and dancing, singing, playing
-                        games and a lot more.</p>
-                </div>
-                <div class="wp5">
-                    <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
-                    <p>This event is no way close to ethnic. The bride & groom would like to have some "shots before the
-                        knot". With booze flowing down the floor and the western attire on, everyone would be busy
-                        showing off their new moves on the stage which they have finely honed. Lastly, expect some beer
-                        pong matches & karaoke for sure.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <p><strong>28th November</strong></p>
-
-                    <h5>Haldi <span class="time">10AM-11AM</span></h5>
-                    <p>The haldi ceremony is usually held separately for the bride and the groom. This one is for the
-                        bride. It is a low-key event that involves the application of turmeric paste on the hands, legs
-                        and face of the bride. The groom is not allowed to see the bride after this ritual until the
-                        final wedding ceremony starts.</p>
-                </div>
-                <div class="wp6">
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>This is the main event in the entire wedding when the bride and the groom tie the
-                        knot. The groom comes with the barat and is greeted by the bride side with some dhol of course
-                        as maximum number of guests would be attending this event. This is when the couple circle the
-                        sacred fire and are finally declared husband and wife.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="instagram" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>Making memories with you...</h3>
-                <p class="instagram-text">Help us remember the moment: tag your photos with 
-                    <a href="https://instagram.com/explore/tags/herrerasekula/" target="_blank" rel="noopener noreferrer nofollow">#HerreraSekula</a>
-                </p>
-                <p>
-                    Also, please use the disposable cameras provided...
-                </p>    
-            </div>
-        </div>
-        <div class="row section-border wp7">
-            <div class="instagram">
-                📷
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="eng-pics" class="section-padding">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Engagement Photos</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng1-lg.jpeg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng1-sm.jpeg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng2-lg.jpeg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng2-sm.jpeg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng3-lg.jpeg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng3-sm.jpeg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng4-lg.jpeg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng4-sm.jpeg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng5-lg.jpeg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng5-sm.jpeg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng6-lg.jpeg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng6-sm.jpeg" alt=""/>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row hidden-lg hidden-md hidden-xs">
-            <div class="col-xs-12 section-border section-padding"></div>
-        </div>
-    </div>
-</section>
-
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>The venue</h3>
-        <p>We will celebrate at Patio Los Arcos Vallarta on the beach. Please find below a map to the venue, as well as a functionality, which will allow you to book an Uber with the click of a button.</p>
-    </div>
-    <section id="video-bg" class="hidden-sm hidden-xs">
-        <div id="bgndVideo" class="player"
-             data-property="{videoURL:'https://youtu.be/DD1Ek1Kn4OI',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:420, stopAt:510, opacity:1}">
-        </div>
-        <div id="video-content">
-            <h5>Puerto Vallarta</h5>
-            <p>Una playa con sabor a México</p>
-        </div>
-    </section>
-    <section>
-        <div class="text-center">
-            <h3>Map</h3>
-        </div>
-    </section>
-    <div id="map-canvas">
-        <iframe src="https://storage.googleapis.com/maps-solutions-1ev48sjwl6/neighborhood-discovery/zrwk/neighborhood-discovery.html"
-            width="100%" height="100%"
-            style="border:0;"
-            loading="lazy">
-        </iframe>
-    </div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Patio Los Arcos Vallarta</h5>
-                            <p>Marina Vallarta, 48450 Puerto Vallarta, Jalisco, Mexico</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Mr. Amit Roy</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
-                                <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a></p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=khUFNQoGoUzK9bw0A4u4YKIrSg_FQYYf3i-T1cxJ&pickup=my_location&pickup[nickname]=My%20location&dropoff[nickname]=Patio%20Los%20Arcos%20Vallarta&dropoff[latitude]=20.656498486201187&dropoff[longitude]=-105.24944455618083"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="hotels" class="row section-padding">
-        <div class="col-md-4 col-md-offset-4 text-center">
-            <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#hotel-modal">
-                <i class="fa fa-barcode"></i>&nbsp;&nbsp;Hotel Recommendations
-            </a>
-        </div>
-    </div>
-
-    <div id="hotel-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">Hotel Recommendations</h3>
-                    <h5>Vamar Vallarta Marina & Beach Resort</h5>
-                    <p>
-                        <strong>Subtitle #1</strong>
-                        <br>
-                        Explanation
-                        <br>
-                        Address
-                        <br>
-                        URL
-                    </p>
-                    <h5>Hotel #3</h5>
-                    <p>
-                        <strong>Subtitle #2</strong>
-                        <br>
-                        Explanation
-                        <br>
-                        Address
-                        <br>
-                        URL
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Until final release -->
-<!--section class="rsvp text-center" id="rsvp">
-
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you at our wedding.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>RSVP</h3>
-                <p>We would greatly appreciate if you could RSVP before 15th of October '23</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
+                            <div class="row text-center">
+                                <div class="col-lg-6" style="padding: 5px;"> <a class="btn btn-fill btn-small" href="https://m.uber.com/ul/?action=setPickup&amp;client_id=khUFNQoGoUzK9bw0A4u4YKIrSg_FQYYf3i-T1cxJ&amp;pickup=my_location&amp;pickup[nickname]=My%20location&amp;dropoff[nickname]=Patio%20Los%20Arcos%20Vallarta&amp;dropoff[latitude]=20.656498486201187&amp;dropoff[longitude]=-105.24944455618083"><i class="fa fa-taxi"></i>&#xA0;&#xA0;Book Uber</a>
+                                </div>
+                                <div class="col-lg-6" style="padding: 5px;"> <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&#xA0;&#xA0;Show map</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="total_guests" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Total number of guests"
-                                                                  required>
-                            </div>
+                </div>
+            </div>
+            <div id="hotels" class="row section-padding">
+                <div class="col-lg-4 offset-md-4 text-center"> <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#hotel-modal">
+                    <i class="fa fa-barcode"></i>&#xA0;&#xA0;Hotel Recommendations
+                    </a>
+                </div>
+            </div>
+            <div id="hotel-modal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&#xD7;</span>
+                            </button>
+                            <h3 class="text-center section-padding">Hotel Recommendations</h3>
+                            <h5>Vamar Vallarta Marina &amp; Beach Resort</h5>
+                            <p> <strong>Subtitle #1</strong>
+                                <br>Explanation
+                                <br>Address
+                                <br>URL
+                            </p>
+                            <h5>Hotel #3</h5>
+                            <p> <strong>Subtitle #2</strong>
+                                <br>Explanation
+                                <br>Address
+                                <br>URL
+                            </p>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Until final release -->
+        <!--section class="rsvp text-center" id="rsvp">
+            <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                            </button>
+                            <div class="section-padding">
+                                <h3>Thank you!</h3>
+                                <p>We are glad to see you at our wedding.</p>
+                                <div id="add-to-cal"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-md-3">
+                        <h3>RSVP</h3>
+                        <p>We would greatly appreciate if you could RSVP before 15th of October 2023</p>
+                        <form id="rsvp-form" class="rsvp-form"
+                              action=""
+                              method="POST">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                             placeholder="Your email"
+                                                                             required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-user"></i><input name="name" class=""
+                                                                         placeholder="Your name"
+                                                                         required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-users"></i><input type="number" name="total_guests" class="" min="0"
+                                                                          max="4"
+                                                                          placeholder="Total number of guests"                    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                                                        class="" min="0"
+                                                                        placeholder="Invite code"
+                                                                        required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12" id="alert-wrapper"></div>
+                            </div>
+                            <button class="btn-fill rsvp-btn">
+                                RSVP now!
+                            </button>
+                        </form>
                     </div>
-                    <button class="btn-fill rsvp-btn">
-                        RSVP now!
-                    </button>
-                </form>
+                </div>
             </div>
-        </div>
-    </div>
-</section-->
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center content">
-                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Developed by Stephan with lots of <span class="fa fa-heart pulse2"></span> for Daniela</p>
+            </section-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center content">
+                        <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                        <p>Developed by Stephan with lots of <span class="fa fa-heart pulse2"></span> for
+                            Daniela
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="/js/jquery.fancybox.pack.js"></script>
-<script src="/js/vendor/bootstrap.min.js"></script>
-<script src="/js/jquery.flexslider-min.js"></script>
-<script src="/js/jquery.mb.YTPlayer.min.js"></script>
-<script src="/modules/waypoints/lib/jquery.waypoints.min.js"></script>
-<script src="/js/vendor/ouical.js"></script>
-<script src="/js/sha256.js"></script>
-<script src="/js/ls-countdown.min.js"></script>
-<script src="/js/scripts.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2w5ZwidHiebiUIuCEEWYYDHIwLpVB328&callback=initMap"></script>
-</body>
+        </footer>
+    </body>
 </html>
