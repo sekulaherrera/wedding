@@ -4,7 +4,7 @@
     "schedule_id": "Zeitplan",
     "events_id": "Events",
     "phototag_id": "Photo Tag",
-    "eng-pics_id": "Verlobungsfotos",
+    "engpics_id": "Verlobungsfotos",
     "map_id": "Räumlichkeiten",
     "hotels_id": "Hotelempfehlungen"
 }

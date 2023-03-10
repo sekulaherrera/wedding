@@ -4,7 +4,7 @@
     "schedule_id": "Schedule",
     "events_id": "Events",
     "phototag_id": "Photo Tag",
-    "eng-pics_id": "Engagement Photos",
+    "engpics_id": "Engagement Photos",
     "map_id": "Venue",
     "hotels_id": "Hotel Recommendations"
 }

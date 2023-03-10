@@ -139,7 +139,7 @@ $(document).ready(function () {
     /********************* Initialize language ********************/
 
     getLanguage();
-    
+
     /********************* Add wedding countdown ********************/
     
     let targetDate = new Date(2024, 3-1, 15, 12);
@@ -244,14 +244,14 @@ function getLanguage() {
         success: function(data) {
             language = data;
             //$('#text').text(language.hello);
-            $('title_id').text(language.title_id);
-            $('intro_id').text(language.intro_id);
-            $('schedule_id').text(language.schedule_id);
-            $('events_id').text(language.events_id);
-            $('phototag_id').text(language.phototag_id);
-            $('eng-pics_id').text(language.eng-pics_id);
-            $('map_id').text(language.map_id);
-            $('hotels_id').text(language.hotels_id);
+            $('#title_id').text(language.title_id);
+            $('#intro_id').text(language.intro_id);
+            $('#schedule_id').text(language.schedule_id);
+            $('#events_id').text(language.events_id);
+            $('#phototag_id').text(language.phototag_id);
+            $('#engpics_id').text(language.eng-pics_id);
+            $('#map_id').text(language.map_id);
+            $('#hotels_id').text(language.hotels_id);
         }
     });
 }
