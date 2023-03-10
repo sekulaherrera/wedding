@@ -67,13 +67,13 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <li><a href="#intro" id="intro_id">How we met</a></li>
-                            <li><a href="#schedule" id="schedule_id">Schedule</a></li>
-                            <li><a href="#events" id="events_id">Events</a></li>
-                            <li><a href="#instagram" id="phototag_id">Photo Tag</a></li>
-                            <li><a href="#eng-pics" id="engpics_id">Engagement Photos</a></li>
-                            <li><a href="#map" id="map_id">The Venue</a></li>
-                            <li><a href="#hotels" id="hotels_id">Hotel Recommendations</a></li>
+                            <li><a href="#intro" id="intro_id"></a></li>
+                            <li><a href="#schedule" id="schedule_id"></a></li>
+                            <li><a href="#events" id="events_id"></a></li>
+                            <li><a href="#phototag" id="phototag_id"></a></li>
+                            <li><a href="#eng-pics" id="engpics_id"></a></li>
+                            <li><a href="#map" id="map_id"></a></li>
+                            <li><a href="#hotels" id="hotels_id"></a></li>
                         </ul>
                         <ul class="member-actions">
                             <!--li><a href="#map" class="login">The Venue</a></li>
@@ -119,9 +119,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3>We are getting married</h3>
-                <p>on the 15<sup>th</sup> of March, 2024, and we would like to share this moment with you.</p>
-                <h3>Time remaining:</h3>
+                <h3 id="invitation_title_id">We are getting married</h3>
+                <p id="invitation_p_id"></p>
+                <h3 id="invitation_countdown_id"></h3>
                 <div id="countdown">
                     <div class="countdown-item days">0</div>
                     <div class="countdown-item hours">0</div>
@@ -137,24 +137,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="header">How we met</h3>
+                <h3 class="header" id="intro_id"></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
             <div class="col-md-6">
-                <p>
-                    On a Friday night, I was sitting in a train returning from a business trip from Hamburg to Berlin. It was a difficult week with a
-                    client and all I wanted is to get back home, take a shower, and rest. However, a friend of mine, Monse,
-                    called me, asking her for help. Honestly, I was considering to deny the request and just continue on
-                    with my plan to rest. Something in my mind told me to be a nice guy and help her, instead. So that's
-                    what I did: I told her to let me get back home, take a shower, and I will be with her in a couple of
-                    hours.
-                    When I arrived at her place, all I could see was Daniela - not even remotely noticing all of the
-                    Mexicans standing in Monse's kitchen. This was the day I knew that I was going to marry this girl.
-                    A couple years down the line, here we are, inviting you to our wedding.<br>
-                    I knew I was right...😉
-                </p>
+                <p id="intro_p_id"></p>
             </div>
             <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div>
         </div>
@@ -169,7 +158,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="header">Schedule</h3>
+                <h3 class="header" id="schedule_id">Schedule</h3>
             </div>
         </div>
         <div class="row">
@@ -265,7 +254,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="header">Events</h3>
+                <h3 class="header"id="events_id">Events</h3>
             </div>
         </div>
         <div class="row">
@@ -314,17 +303,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3>Making memories with you...</h3>
-                <p class="instagram-text">Help us remember the moment: tag your photos with 
+                <h3 id="phototag_memories_id"></h3>
+                <p id="phototag_tag_id" class="phototag-text"> 
                     <a href="https://instagram.com/explore/tags/herrerasekula/" target="_blank" rel="noopener noreferrer nofollow">#HerreraSekula</a>
                 </p>
-                <p>
-                    Also, please use the disposable cameras provided...
-                </p>    
+                <p id="phototag_cameras_id"></p>    
             </div>
         </div>
         <div class="row section-border wp7">
-            <div class="instagram">
+            <div class="phototag">
                 📷
             </div>
         </div>
@@ -335,7 +322,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="header">Engagement Photos</h3>
+                <h3 class="header" id="engpics_id"></h3>
             </div>
         </div>
         <div class="row">
@@ -410,8 +397,8 @@
 
 <section id="map" class="section-padding">
     <div class="text-center">
-        <h3>The venue</h3>
-        <p>We will celebrate at Patio Los Arcos Vallarta on the beach. Please find below a map to the venue, as well as a functionality, which will allow you to book an Uber with the click of a button.</p>
+        <h3 id="map_id"></h3>
+        <p id="venue_description_id"></p>
     </div>
     <section id="video-bg" class="hidden-sm hidden-xs">
         <div id="bgndVideo" class="player"
@@ -424,7 +411,7 @@
     </section>
     <section>
         <div class="text-center">
-            <h3>Map</h3>
+            <h3 id="map_map_id"></h3>
         </div>
     </section>
     <div id="map-canvas">
@@ -439,7 +426,7 @@
             <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
                 <div class="text-center">
                     <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;
                     </div>
                 </div>
                 <div id="map-content" class="pointer-events-auto">
@@ -456,12 +443,12 @@
                     </div>
                     <div class="row text-center">
                         <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
+                            <a id="book_uber_id" class="btn btn-fill btn-small"
                                href="https://m.uber.com/ul/?action=setPickup&client_id=khUFNQoGoUzK9bw0A4u4YKIrSg_FQYYf3i-T1cxJ&pickup=my_location&pickup[nickname]=My%20location&dropoff[nickname]=Patio%20Los%20Arcos%20Vallarta&dropoff[latitude]=20.656498486201187&dropoff[longitude]=-105.24944455618083"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                                    class="fa fa-taxi"></i>&nbsp;&nbsp;</a>
                         </div>
                         <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a>
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;</a>
                         </div>
                     </div>
                 </div>
@@ -470,8 +457,8 @@
     </div>
     <div id="hotels" class="row section-padding">
         <div class="col-md-4 col-md-offset-4 text-center">
-            <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#hotel-modal">
-                <i class="fa fa-barcode"></i>&nbsp;&nbsp;Hotel Recommendations
+            <a id="hotels_id" class="btn btn-accent btn-small" data-toggle="modal" data-target="#hotel-modal">
+                <i class="fa fa-barcode"></i>&nbsp;&nbsp;
             </a>
         </div>
     </div>
@@ -482,7 +469,7 @@
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
-                    <h3 class="text-center section-padding">Hotel Recommendations</h3>
+                    <h3 id="hotels_id" class="text-center section-padding"></h3>
                     <h5>Vamar Vallarta Marina & Beach Resort</h5>
                     <p>
                         <strong>Subtitle #1</strong>
@@ -518,8 +505,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
                     <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you at our wedding.</p>
+                        <h3 id="thank_you_id"></h3>
+                        <p id="see_you_id"></p>
                         <div id="add-to-cal"></div>
                     </div>
                 </div>
@@ -531,7 +518,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>RSVP</h3>
-                <p>We would greatly appreciate if you could RSVP before 15th of October '23</p>
+                <p id="rsvp_text_id"></p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
@@ -573,10 +560,10 @@
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn-disabled" disabled>
-                        RSVP now!
+                        RSVP
                     </button>
                     <div role="tooltip" class="tooltipBox" id="disabledReason">
-                        <span class="tooltipText">Disabled for now. Check back later to RSVP!</span>
+                        <span id="rsvp_disabled_id" class="tooltipText"></span>
                     </div>
                 </form>
             </div>
@@ -589,7 +576,7 @@
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Developed by Stephan with lots of <span class="fa fa-heart pulse2"></span> for Daniela</p>
+                <p id="dev_id">Developed by Stephan with lots of <span class="fa fa-heart pulse2"></span> for Daniela</p>
             </div>
         </div>
     </div>

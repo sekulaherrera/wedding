@@ -6,5 +6,22 @@
     "phototag_id": "Photo Tag",
     "engpics_id": "Engagement Photos",
     "map_id": "Venue",
-    "hotels_id": "Hotel Recommendations"
+    "hotels_id": "Hotel Recommendations",
+    "invitation_title_id": "We are getting married",
+    "invitation_p_id": "on the 15<sup>th</sup> of March, 2024, and we would like to share this moment with you.",
+    "invitation_countdown_id": "Time remaining",
+    "intro_p_id": "On a Friday night, I was sitting in a train returning from a business trip from Hamburg to Berlin. It was a difficult week with a client and all I wanted is to get back home, take a shower, and rest. However, a friend of mine, Monse, called me, asking her for help. Honestly, I was considering to deny the request and just continue on with my plan to rest. Something in my mind told me to be a nice guy and help her, instead. So that's what I did: I told her to let me get back home, take a shower, and I will be with her in a couple of hours. When I arrived at her place, all I could see was Daniela - not even remotely noticing all of the Mexicans standing in Monse's kitchen. This was the day I knew that I was going to marry her. A couple years down the line, here we are, inviting you to our wedding.<br> I knew I was right...😉",
+    "phototag_memories_id": "Making memories with you...",
+    "phototag_tag_id": "Help us remember the moment: tag your photos with",
+    "phototag_cameras_id": "Also, please use the disposable cameras provided...",
+    "venue_description_id": "We will celebrate at Patio Los Arcos Vallarta on the beach. Please find below a map to the venue, as well as a functionality, which will allow you to book an Uber with the click of a button.",
+    "map_map_id": "Map",
+    "btn-show-content": "Show info",
+    "book_uber_id": "Book Uber",
+    "btn-show-ma": "Show map",
+    "thank_you_id": "Thank you!",
+    "see_you_id": "We are glad to be seeing you at our wedding.",
+    "rsvp_text_id": "We would appreciate if you could RSVP before 15th of October 2023",
+    "rsvp_disabled_id": "Disabled for now. Check back later to RSVP!",
+    "dev_id": "Developed by Stephan with lots of <span class="fa fa-heart pulse2"></span> for Daniela"
 }
