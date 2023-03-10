@@ -385,6 +385,11 @@ header {
 /* ==========================================================================
 Language dropdown
 ========================================================================== */
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #1C2331;
+  color: orange !important;
+}
+
 .dropdown-item {
   color: #3d4351;
 }
