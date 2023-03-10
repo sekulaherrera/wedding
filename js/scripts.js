@@ -249,7 +249,7 @@ function getLanguage() {
             $('#schedule_id').text(language.schedule_id);
             $('#events_id').text(language.events_id);
             $('#phototag_id').text(language.phototag_id);
-            $('#engpics_id').text(language.eng-pics_id);
+            $('#engpics_id').text(language.engpics_id);
             $('#map_id').text(language.map_id);
             $('#hotels_id').text(language.hotels_id);
         }
