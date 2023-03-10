@@ -396,7 +396,7 @@ Language dropdown
 }
 
 .open > .dropdown-menu {
-  background-color: rgba(28,54,83,.6);
+  background-color: rgba(50,50,50,.88);
 }
 
 .open > .dropdown-menu.fade {
@@ -896,6 +896,13 @@ RSVP form
       border-radius: 3px;
       width: 100%;
       font-size: 13px;
+    }
+    .rsvp-btn-disabled {
+      padding: 15px 0;
+      border-radius: 3px;
+      width: 100%;
+      font-size: 13px;
+      background-color: rgba(50,50,50,.88);
     }
     .form-input-group {
       width: 100%;
