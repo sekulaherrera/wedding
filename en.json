@@ -1,3 +1,10 @@
 {
-    "title": "Wedding Daniela & Stephan"
+    "title_id": "Wedding Daniela & Stephan",
+    "intro_id": "How we met",
+    "schedule_id": "Schedule",
+    "events_id": "Events",
+    "phototag_id": "Photo Tag",
+    "eng-pics_id": "Engagement Photos",
+    "map_id": "Venue",
+    "hotels_id": "Hotel Recommendations"
 }
