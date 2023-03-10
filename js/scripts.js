@@ -136,7 +136,13 @@ $(document).ready(function () {
 
     });
 
+    /********************* Initialize language ********************/
+
+    getLanguage();
+    //$('#text').text = language.hello;
+
     /********************* Add wedding countdown ********************/
+    
     let targetDate = new Date(2024, 3-1, 15, 12);
     let onStart = () => {
         document.querySelectorAll('.countdown-item').forEach(item => item.classList.add('show'))
@@ -199,6 +205,7 @@ $(document).ready(function () {
 
 
     /********************** RSVP **********************/
+    /*
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
         var data = $(this).serialize();
@@ -222,8 +229,30 @@ $(document).ready(function () {
                     $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
                 });
         }
-    });
+    });*/
 });
+
+/********************* Add language functionality ********************/
+    
+var language;
+
+function getLanguage() {
+    (localStorage.getItem('currentLanguage') == null) ? setLanguage('en') : false;
+    $.ajax({
+        dataType: 'json',
+        aync: false,
+        url: '/' + localStorage.getItem('currentLanguage') + '.json',
+        success: function(data) {
+            language = data;
+            //$('#text').text(language.hello);
+        }
+    });
+}
+
+function setLanguage(language) {
+    localStorage.setItem('currentLanguage', language);
+    getLanguage();
+}
 
 /********************** Extras **********************/
 

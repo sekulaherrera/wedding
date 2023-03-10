@@ -385,11 +385,6 @@ header {
 /* ==========================================================================
 Language dropdown
 ========================================================================== */
-.dropdown-item:focus, .dropdown-item:hover {
-  background-color: #1C2331;
-  color: orange !important;
-}
-
 .dropdown-item {
   color: #3d4351;
 }
@@ -399,6 +394,11 @@ Language dropdown
   opacity: 0;
   pointer-events: none;
 }
+
+.open > .dropdown-menu {
+  background-color: rgba(28,54,83,.6);
+}
+
 .open > .dropdown-menu.fade {
   pointer-events: auto;
   opacity: 1;

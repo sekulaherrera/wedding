@@ -79,15 +79,15 @@
                         <ul class="member-actions">
                             <!--li><a href="#map" class="login">The Venue</a></li>
                             <li><a href="#hotels" class="login">Hotel Recommendations</a></li-->
-                            <!--li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li-->
+                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="languageButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="languageButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     🌐 Language
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="languageButton">
-                                  <li><a class="dropdown-item" href="#">English</a></li>
-                                  <li><a class="dropdown-item" href="#">Español</a></li>
-                                  <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                                  <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                                  <li><a class="dropdown-item" href="#" onclick="setLanguage('es')">Español</a></li>
+                                  <li><a class="dropdown-item" href="#" onclick="setLanguage('de')">Deutsch</a></li>
                                 </ul>
                             </div>
                         </ul>
@@ -510,8 +510,7 @@
     </div>
 </section>
 
-<!-- Until final release -->
-<!--section class="rsvp text-center" id="rsvp">
+<section class="rsvp text-center" id="rsvp">
 
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -574,14 +573,14 @@
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
-                    <button class="btn-fill rsvp-btn">
+                    <button class="btn-fill rsvp-btn" disabled>
                         RSVP now!
                     </button>
                 </form>
             </div>
         </div>
     </div>
-</section-->
+</section>
 
 <footer>
     <div class="container">
