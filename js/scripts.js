@@ -139,7 +139,31 @@ $(document).ready(function () {
     /********************* Initialize language ********************/
 
     getLanguage();
-    updateLanguage(language);
+    $('#title_id').text(language.title_id);
+    $('#intro_id').text(language.intro_id);
+    $('#schedule_id').text(language.schedule_id);
+    $('#events_id').text(language.events_id);
+    $('#phototag_id').text(language.phototag_id);
+    $('#engpics_id').text(language.engpics_id);
+    $('#map_id').text(language.map_id);
+    $('#hotels_id').text(language.hotels_id);
+    $('#invitation_title_id').text(language.invitation_title_id);
+    $('#invitation_p_id').text(language.invitation_p_id);
+    $('#invitation_countdown_id').text(language.invitation_countdown_id);
+    $('#intro_p_id').text(language.intro_p_id);
+    $('#phototag_memories_id').text(language.phototag_memories_id);
+    $('#phototag_tag_id').text(language.phototag_tag_id);
+    $('#phototag_cameras_id').text(language.phototag_cameras_id);
+    $('#venue_description_id').text(language.venue_description_id);
+    $('#map_map_id').text(language.map_map_id);
+    $('#btn-show-content').text(language.btn-show-content);
+    $('#book_uber_id').text(language.book_uber_id);
+    $('#btn-show-map').text(language.btn-show-map);
+    $('#thank_you_id').text(language.thank_you_id);
+    $('#see_you_id').text(language.see_you_id);
+    $('#rsvp_text_id').text(language.rsvp_text_id);
+    $('#rsvp_disabled_id').text(language.rsvp_disabled_id);
+    $('#dev_id').text(language.dev_id);
 
     /********************* Add wedding countdown ********************/
     
@@ -236,42 +260,39 @@ $(document).ready(function () {
     
 var language;
 
-function updateLanguage(data) {
-    language = data;
-    $('#title_id').text(language.title_id);
-    $('#intro_id').text(language.intro_id);
-    $('#schedule_id').text(language.schedule_id);
-    $('#events_id').text(language.events_id);
-    $('#phototag_id').text(language.phototag_id);
-    $('#engpics_id').text(language.engpics_id);
-    $('#map_id').text(language.map_id);
-    $('#hotels_id').text(language.hotels_id);
-    $('#invitation_title_id').text(language.invitation_title_id);
-    $('#invitation_p_id').text(language.invitation_p_id);
-    $('#invitation_countdown_id').text(language.invitation_countdown_id);
-    $('#intro_p_id').text(language.intro_p_id);
-    $('#phototag_memories_id').text(language.phototag_memories_id);
-    $('#phototag_tag_id').text(language.phototag_tag_id);
-    $('#phototag_cameras_id').text(language.phototag_cameras_id);
-    $('#venue_description_id').text(language.venue_description_id);
-    $('#map_map_id').text(language.map_map_id);
-    $('#btn-show-content').text(language.btn-show-content);
-    $('#book_uber_id').text(language.book_uber_id);
-    $('#btn-show-map').text(language.btn-show-map);
-    $('#thank_you_id').text(language.thank_you_id);
-    $('#see_you_id').text(language.see_you_id);
-    $('#rsvp_text_id').text(language.rsvp_text_id);
-    $('#rsvp_disabled_id').text(language.rsvp_disabled_id);
-    $('#dev_id').text(language.dev_id);    
-}
-
 function getLanguage() {
     (localStorage.getItem('currentLanguage') == null) ? setLanguage('en') : false;
     $.ajax({
         dataType: 'json',
         aync: false,
         url: '/' + localStorage.getItem('currentLanguage') + '.json',
-        success: updateLanguage(data)
+        success: function(data) {
+            $('#title_id').text(language.title_id);
+            $('#intro_id').text(language.intro_id);
+            $('#schedule_id').text(language.schedule_id);
+            $('#events_id').text(language.events_id);
+            $('#phototag_id').text(language.phototag_id);
+            $('#engpics_id').text(language.engpics_id);
+            $('#map_id').text(language.map_id);
+            $('#hotels_id').text(language.hotels_id);
+            $('#invitation_title_id').text(language.invitation_title_id);
+            $('#invitation_p_id').text(language.invitation_p_id);
+            $('#invitation_countdown_id').text(language.invitation_countdown_id);
+            $('#intro_p_id').text(language.intro_p_id);
+            $('#phototag_memories_id').text(language.phototag_memories_id);
+            $('#phototag_tag_id').text(language.phototag_tag_id);
+            $('#phototag_cameras_id').text(language.phototag_cameras_id);
+            $('#venue_description_id').text(language.venue_description_id);
+            $('#map_map_id').text(language.map_map_id);
+            $('#btn-show-content').text(language.btn-show-content);
+            $('#book_uber_id').text(language.book_uber_id);
+            $('#btn-show-map').text(language.btn-show-map);
+            $('#thank_you_id').text(language.thank_you_id);
+            $('#see_you_id').text(language.see_you_id);
+            $('#rsvp_text_id').text(language.rsvp_text_id);
+            $('#rsvp_disabled_id').text(language.rsvp_disabled_id);
+            $('#dev_id').text(language.dev_id);
+        }
     });
 }
 
