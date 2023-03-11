@@ -138,6 +138,7 @@ $(document).ready(function () {
 
     /********************* Initialize language ********************/
 
+    var language;
     getLanguage();
     $('#title_id').text(language.title_id);
     $('#intro_id').text(language.intro_id);
@@ -257,8 +258,6 @@ $(document).ready(function () {
 });
 
 /********************* Add language functionality ********************/
-    
-var language;
 
 function getLanguage() {
     (localStorage.getItem('currentLanguage') == null) ? setLanguage('en') : false;
