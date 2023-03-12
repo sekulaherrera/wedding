@@ -267,6 +267,7 @@ function getLanguage() {
         aync: false,
         url: '/' + localStorage.getItem('currentLanguage') + '.json',
         success: function(data) {
+            language = data;
             $('#title_id').text(language.title_id);
             $('#intro_id').text(language.intro_id);
             $('#schedule_id').text(language.schedule_id);
