@@ -21,6 +21,11 @@ function getLanguage() {
             $('#invitation_p_id').html(language.invitation_p_id);
             $('#invitation_countdown_id').text(language.invitation_countdown_id);
             $('#intro_p_id').text(language.intro_p_id);
+            $('#schedule_date_id').html(language.schedule_date_id);
+            $('#schedule_1_header_id').html(language.schedule_1_header_id);
+            $('#schedule_1_text_id').text(language.schedule_1_text_id);
+            $('#schedule_2_header_id').html(language.schedule_2_header_id);
+            $('#schedule_2_text_id').text(language.schedule_2_text_id);
             $('#phototag_memories_id').text(language.phototag_memories_id);
             $('#phototag_tag_id').html(language.phototag_tag_id);
             $('#phototag_cameras_id').text(language.phototag_cameras_id);
