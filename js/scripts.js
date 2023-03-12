@@ -1,5 +1,5 @@
 /********************* Add language functionality ********************/
-var language = 'en';
+var language;
 
 function getLanguage() {
     (localStorage.getItem('currentLanguage') == null) ? setLanguage('en') : false;
@@ -18,7 +18,7 @@ function getLanguage() {
             $('#map_id').text(language.map_id);
             $('#hotels_id').text(language.hotels_id);
             $('#invitation_title_id').text(language.invitation_title_id);
-            $('#invitation_p_id').text(language.invitation_p_id);
+            $('#invitation_p_id').html(language.invitation_p_id);
             $('#invitation_countdown_id').text(language.invitation_countdown_id);
             $('#intro_p_id').text(language.intro_p_id);
             $('#phototag_memories_id').text(language.phototag_memories_id);
@@ -29,11 +29,12 @@ function getLanguage() {
             $('#btn_show_content').text(language.btn_show_content);
             $('#book_uber_id').text(language.book_uber_id);
             $('#btn_show_map').text(language.btn_show_map);
+            $('#hotels_button_id').html(language.hotels_button_id);
             $('#thank_you_id').text(language.thank_you_id);
             $('#see_you_id').text(language.see_you_id);
-            $('#rsvp_text_id').text(language.rsvp_text_id);
+            $('#rsvp_text_id').html(language.rsvp_text_id);
             $('#rsvp_disabled_id').text(language.rsvp_disabled_id);
-            $('#dev_id').text(language.dev_id);
+            $('#dev_id').html(language.dev_id);
         }
     });
 }
@@ -184,7 +185,7 @@ $(document).ready(function () {
     /********************* Initialize language ********************/
 
     getLanguage();
-    $('#title_id').text(language.title_id);
+    /*$('#title_id').text(language.title_id);
     $('#intro_id').text(language.intro_id);
     $('#schedule_id').text(language.schedule_id);
     $('#events_id').text(language.events_id);
@@ -208,7 +209,7 @@ $(document).ready(function () {
     $('#see_you_id').text(language.see_you_id);
     $('#rsvp_text_id').text(language.rsvp_text_id);
     $('#rsvp_disabled_id').text(language.rsvp_disabled_id);
-    $('#dev_id').text(language.dev_id);
+    $('#dev_id').text(language.dev_id);*/
 
     /********************* Add wedding countdown ********************/
     
