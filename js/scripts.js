@@ -26,6 +26,16 @@ function getLanguage() {
             $('#schedule_1_text_id').text(language.schedule_1_text_id);
             $('#schedule_2_header_id').html(language.schedule_2_header_id);
             $('#schedule_2_text_id').text(language.schedule_2_text_id);
+            $('#event_date_1_id').html(language.event_date_1_id);
+            $('#event_1_header_id').html(language.event_1_header_id);
+            $('#event_1_text_id').text(language.event_1_text_id);
+            $('#event_2_header_id').html(language.event_2_header_id);
+            $('#event_2_text_id').text(language.event_2_text_id);
+            $('#event_date_2_id').html(language.event_date_2_id);
+            $('#event_3_header_id').html(language.event_3_header_id);
+            $('#event_3_text_id').text(language.event_3_text_id);
+            $('#event_4_header_id').html(language.event_4_header_id);
+            $('#event_4_text_id').text(language.event_4_text_id);
             $('#phototag_memories_id').text(language.phototag_memories_id);
             $('#phototag_tag_id').html(language.phototag_tag_id);
             $('#phototag_cameras_id').text(language.phototag_cameras_id);
