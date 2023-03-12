@@ -157,9 +157,9 @@ $(document).ready(function () {
     $('#phototag_cameras_id').text(language.phototag_cameras_id);
     $('#venue_description_id').text(language.venue_description_id);
     $('#map_map_id').text(language.map_map_id);
-    $('#btn-show-content').text(language.btn-show-content);
+    $('#btn_show_content').text(language.btn_show_content);
     $('#book_uber_id').text(language.book_uber_id);
-    $('#btn-show-map').text(language.btn-show-map);
+    $('#btn_show_map').text(language.btn_show_map);
     $('#thank_you_id').text(language.thank_you_id);
     $('#see_you_id').text(language.see_you_id);
     $('#rsvp_text_id').text(language.rsvp_text_id);
@@ -188,13 +188,13 @@ $(document).ready(function () {
 
 
     /********************** Toggle Map Content **********************/
-    $('#btn-show-map').click(function () {
+    $('#btn_show_map').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+        $('#btn_show_content').toggleClass('toggle-map-content');
     });
-    $('#btn-show-content').click(function () {
+    $('#btn_show_content').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+        $('#btn_show_content').toggleClass('toggle-map-content');
     });
 
     /********************** Add to Calendar **********************/
@@ -283,9 +283,9 @@ function getLanguage() {
             $('#phototag_cameras_id').text(language.phototag_cameras_id);
             $('#venue_description_id').text(language.venue_description_id);
             $('#map_map_id').text(language.map_map_id);
-            $('#btn-show-content').text(language.btn-show-content);
+            $('#btn_show_content').text(language.btn_show_content);
             $('#book_uber_id').text(language.book_uber_id);
-            $('#btn-show-map').text(language.btn-show-map);
+            $('#btn_show_map').text(language.btn_show_map);
             $('#thank_you_id').text(language.thank_you_id);
             $('#see_you_id').text(language.see_you_id);
             $('#rsvp_text_id').text(language.rsvp_text_id);
