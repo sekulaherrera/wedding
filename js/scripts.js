@@ -1,3 +1,5 @@
+var language;
+
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
@@ -138,7 +140,6 @@ $(document).ready(function () {
 
     /********************* Initialize language ********************/
 
-    var language;
     getLanguage();
     $('#title_id').text(language.title_id);
     $('#intro_id').text(language.intro_id);
